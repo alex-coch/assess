@@ -1,0 +1,50 @@
+version: "3.1"
+
+intents:
+  - greet
+  # - goodbye
+  # - affirm
+  # - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - learn_
+  - recognized_
+  - out_of_scope
+
+responses:
+
+  utter_greet:
+  - text: "HI! Are you familiar with the famous 'imposter syndrome'?"
+
+  utter_cheer_up:
+  - text: "Dont worry! Here's a 1 minute video I wish everyone would
+watch https://www.youtube.com/watch?v=ZQUxL4Jm1Lo"
+
+  utter_happy:
+  - text: "Amazing! Take a look on this video to make sure we are in
+the same page https://www.youtube.com/watch?v=ZQUxL4Jm1Lo."
+
+  utter_what:
+  - text: "What are your thoughts? Did you learn anything new? Or
+maybe you recognised yourself?"
+
+  utter_other_people:
+  - text: "Do you know anyone who is excellent but doubts him or
+herself?"
+
+  utter_describe:
+  - text: "Can you describe a situation where you felt like an imposter
+or you didn't deserve the success or that you would soon
+screw up because it was just luck that brought you there?"
+
+  utter_out_of_scope:
+  - text: "We look up to people like Einstein. What reflections do you
+get when you know that the GREAT Einstein had imposter
+syndrome?"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

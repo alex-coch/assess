@@ -1,0 +1,52 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: mood_great
+  examples: |
+    - Yes 
+    - Of course 
+    - I've hear about it 
+    - I've read 
+    - I made some research
+
+- intent: mood_unhappy
+  examples: |
+    - No 
+    - Never 
+    - I've heard about it 
+    - First time I heard 
+    - Not sure
+
+- intent: learn_
+  examples: |
+    - I did not know that… 
+    - I've learned a lot
+    - This information is new for me
+
+- intent: recognized_
+  examples: |
+    - I recognised myself in those situations 
+    - That happened to me before 
+    - One time I had this feeling
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?

@@ -1,0 +1,47 @@
+version: "3.1"
+
+stories:
+
+- story: simple way
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - checkpoint: ask_  
+
+- story: user provides yes
+  steps:
+  - checkpoint: ask_
+  - intent: mood_great
+  - action: utter_happy
+  - checkpoint: check_flow_finished
+
+- story: user provides no
+  steps:
+  - checkpoint: ask_
+  - intent: mood_unhappy  
+  - action: utter_cheer_up
+  - checkpoint: check_flow_finished
+
+- story: finish flow
+  steps:
+  - checkpoint: check_flow_finished
+  - action: utter_what
+  - checkpoint: ask_thoughts  
+
+- story: user provides learn
+  steps:
+  - checkpoint: ask_thoughts
+  - intent: learn_
+  - action: utter_other_people
+
+- story: user provides recognized
+  steps:
+  - checkpoint: ask_thoughts
+  - intent: recognized_
+  - action: utter_describe
+
+- story: user provides general
+  steps:
+  - checkpoint: ask_thoughts
+  - intent: out_of_scope
+  - action: utter_out_of_scope
