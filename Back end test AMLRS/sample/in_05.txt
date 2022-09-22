@@ -1,0 +1,8 @@
+a b 50
+a c 50
+c d 50
+c e 50
+d c 50
+d e 50
+e c 50
+e d 50
